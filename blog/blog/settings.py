@@ -153,3 +153,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static")
 ]
+
+#替换系统的User模型类，使用我们自己增加了新字段的User模型类
+AUTH_USER_MODEL = 'users.User'
